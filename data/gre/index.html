@@ -55,32 +55,32 @@
 
   <h5>Refactoring</h5>
   
-  <p>The corpora are converted to <a href="/~bhachey/data/gre/reXML.dtd">a common document type</a> using token standoff, while maintaining compatibility with all information in the original annotation.</p>
+  <p>The corpora are converted to <a href="reXML.dtd">a common document type</a> using token standoff, while maintaining compatibility with all information in the original annotation.</p>
 
-  <p>The original ACE data is encoded in SGML, does not include sentence or word token markup, and uses character standoff annotation for entities and relations. Therefore, conversion to RE XML requires SGML-to-XML conversion, tokenisation and mapping from character offset to token offset. [<a href="/~bhachey/data/gre/examples/ace.xml">ACE example</a>]</p>
+  <p>The original ACE data is encoded in SGML, does not include sentence or word token markup, and uses character standoff annotation for entities and relations. Therefore, conversion to RE XML requires SGML-to-XML conversion, tokenisation and mapping from character offset to token offset. [<a href="examples/ace.xml">ACE example</a>]</p>
 
-  <p>The original BioInfer data is already encoded in XML, includes sentence and word token markup, and uses token standoff annotation for entities and relations.  Therefore, conversion to the RE XML document type is a matter of simple XML-to-XML transformation. [<a href="/~bhachey/data/gre/examples/bioinfer.xml">BioInfer example</a>]</p>
+  <p>The original BioInfer data is already encoded in XML, includes sentence and word token markup, and uses token standoff annotation for entities and relations.  Therefore, conversion to the RE XML document type is a matter of simple XML-to-XML transformation. [<a href="examples/bioinfer.xml">BioInfer example</a>]</p>
 
 
   <h5>Preprocessing</h5>
 
-  <p>The data is enriched with various types of linguistic preprocessing information.  This uses components available as part of <a href="http://www.ltg.ed.ac.uk/software/lt-ttt2">LT-TTT2</a> to perform part-of-speech tagging, lemmatisation, identification and interpretation of nominalisations, verb and noun phrase chunking, identification of chunk heads and identifications of voice and polarity of verb phrases. [<a href="/~bhachey/data/gre/examples/ace.ttt.xml">ACE example</a>, <a href="/~bhachey/data/gre/examples/bioinfer.ttt.xml">BioInfer example</a>]</p>
+  <p>The data is enriched with various types of linguistic preprocessing information.  This uses components available as part of <a href="http://www.ltg.ed.ac.uk/software/lt-ttt2">LT-TTT2</a> to perform part-of-speech tagging, lemmatisation, identification and interpretation of nominalisations, verb and noun phrase chunking, identification of chunk heads and identifications of voice and polarity of verb phrases. [<a href="examples/ace.ttt.xml">ACE example</a>, <a href="examples/bioinfer.ttt.xml">BioInfer example</a>]</p>
 
-  <p>Preprocessing also includes parse information.  This is obtained from <a href="http://webdocs.cs.ualberta.ca/~lindek/minipar.htm">Minipar</a> and consists of token standoff encoding governor-dependency relations.  [<a href="/~bhachey/data/gre/examples/ace.dep.xml">ACE example</a>, <a href="/~bhachey/data/gre/examples/bioinfer.dep.xml">BioInfer example</a>]</p>
+  <p>Preprocessing also includes parse information.  This is obtained from <a href="http://webdocs.cs.ualberta.ca/~lindek/minipar.htm">Minipar</a> and consists of token standoff encoding governor-dependency relations.  [<a href="examples/ace.dep.xml">ACE example</a>, <a href="examples/bioinfer.dep.xml">BioInfer example</a>]</p>
 
 
   <h5>Reannotation</h5>
 
   <p>The reannotation process normalised the two data sets so that they comply with a shared notion of relation that is intuitive, simple and informed by the semantic web.  (See <a href="#hachey-nle2010-datasets">Hachey (In preparation a)</a> for details.)</p>
   
-  <p>For the ACE data, we automatically converted many relations involving nested, nominal entity mentions to relations involving non-nested, named or pronominal entity mentions.  For example, mapping the first entity from <em>'one'</em> to <em>'Amidu Berry'</em> for the membership relation described in the text snippet <em>'Amidu Berry, one half of PBS'</em>. <!--[<a href="/~bhachey/data/gre/examples/ace.nrm.xml">ACE example</a>]--></p>
+  <p>For the ACE data, we automatically converted many relations involving nested, nominal entity mentions to relations involving non-nested, named or pronominal entity mentions.  For example, mapping the first entity from <em>'one'</em> to <em>'Amidu Berry'</em> for the membership relation described in the text snippet <em>'Amidu Berry, one half of PBS'</em>. <!--[<a href="examples/ace.nrm.xml">ACE example</a>]--></p>
 
-  <p>For the BioInfer data, we flattened nested relations, mapped part-whole to part-part relations, and mapped n-ary to binary relations.  <!--[<a href="/~bhachey/data/gre/examples/bioinfer.nrm.xml">BioInfer example</a>]--></p>
+  <p>For the BioInfer data, we flattened nested relations, mapped part-whole to part-part relations, and mapped n-ary to binary relations.  <!--[<a href="examples/bioinfer.nrm.xml">BioInfer example</a>]--></p>
 
 
   <h4 id="download">Download</h4>
 
-  <!--p>The regularised corpora are well-formed xml documents that comply with <a href="/~bhachey/data/gre/reXML.dtd">our reXML document type definition</a>.</p-->
+  <!--p>The regularised corpora are well-formed xml documents that comply with <a href="reXML.dtd">our reXML document type definition</a>.</p-->
 
   <p>The modified version of the ACE data are available for redistribution through the Linguistic Data Consortium (LDC) as Edinburgh Regularised ACE (reACE).  The respective modified corpora are available to license holders for the original distributions for <a href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2005T09">ACE 2004</a> and <a href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2006T06">ACE 2005</a>.
   </p>
@@ -115,17 +115,17 @@
   Generic Relation Extraction.</b> In: <em>Proceedings of the 2009
   Conference on Empirical Methods in Natural Language Processing</em>,
   Singapore.<br/>[<a
-   href="/~bhachey/pubs/hachey-emnlp09.pdf">pdf</a>]</blockquote>
+   href="../../pubs/hachey-emnlp09.pdf">pdf</a>]</blockquote>
 
   <blockquote>Ben Hachey (2009). <b>Generic Relation Identification:
   Models and evaluation.</b> In: <em>Australasian Language Technology
   Workshop</em>, Sydney, NSW, Australia.<br/>[<a
-   href="/~bhachey/pubs/alta2009-hachey.pdf">pdf</a>]</blockquote>
+   href="../../pubs/alta2009-hachey.pdf">pdf</a>]</blockquote>
 
   <!--
   <blockquote>Ben Hachey (2009). <b>Towards Generic Relation
   Extraction.</b> PhD Thesis, University of Edinburgh.  <br/>[<a
-  href="/~bhachey/pubs/hachey-phd-thesis.pdf">pdf</a>]</blockquote>
+  href="../../pubs/hachey-phd-thesis.pdf">pdf</a>]</blockquote>
   -->
 
 
@@ -144,7 +144,7 @@
   
 
   <div id="footer">
-<!-- hhmts start --> Last modified: Thu Feb  3 10:58:10 EST 2011 <!-- hhmts end -->
+<!-- hhmts start --> Last modified: Fri Feb  4 19:40:35 EST 2011 <!-- hhmts end -->
   | <a href="http://validator.w3.org/check?uri=referer"
    title="Validate XHTML code">W3C XHTML 1.0</a> | <a
     href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate CSS
