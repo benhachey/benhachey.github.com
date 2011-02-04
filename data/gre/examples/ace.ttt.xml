@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <text>
+
+    <p>
+      <s id='s17'>
+	<w l='american' p='NNP' phr='B-NP'>American</w>
+	<w l='saxophonist' p='NN' phr='I-NP'>saxophonist</w>
+	<w l='david' p='NNP' phr='B-NP'>David</w>
+	<w l='murray' p='NNP' phr='I-NP'>Murray</w>
+	<w l='recruit' p='VBD' phr='B-VP' voice='act'>recruited</w>
+	<w l='amidu' p='NNP' phr='B-NP'>Amidu</w>
+	<w l='berry' p='NNP' phr='I-NP'>Berry</w>
+	<w p='CC' phr='I-NP'>and</w>
+	<w l='dj' p='NNP' phr='I-NP'>DJ</w>
+	<w l='awadus' p='NNP' phr='I-NP'>Awadi</w>
+	<w p='NN'>.</w>
+      </s>
+    </p>
+
+  </text>
+
+</doc>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <markup>
+
+    <dps>
+      <dp sid='s17'>
+	<dpg d='w292' cr='mod:w295' w='American' p='A' l='~'/>
+	<dpg d='w293' cr='nn:w295' w='saxophonist' p='N' l='~'/>
+	<dpg d='w294' cr='lex-mod:w295' w='David' p='U' l='~'/>
+	<dpg d='w295' cr='s+subj:w296' w='Murray' p='N' l='David Murray'/>
+	<dpg d='w296' cr='' w='recruited' p='V' l='recruit'/>
+	<dpg d='w297' cr='lex-mod:w298' w='Amidu' p='U' l='~'/>
+	<dpg d='w298' cr='obj:w296' w='Berry' p='N' l='Amidu Berry'/>
+	<dpg d='w299' cr='punc:w298' w='and' p='U' l='~'/>
+	<dpg d='w300' cr='lex-mod:w301' w='DJ' p='U' l='~'/>
+	<dpg d='w301' cr='conj:w298' w='Awadi' p='N' l='DJ Awadi'/>
+	<dpg d='w302' cr='' w='.' p='U' l='~'/>
+      </dp>
+    </dps>
+
+  </markup>
+
+</doc>

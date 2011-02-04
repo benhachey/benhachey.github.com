@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <text>
+
+    <p>
+      <s id='s17'>
+	<w id='w292'>American</w>
+	<w id='w293'>saxophonist</w>
+	<w id='w294'>David</w>
+	<w id='w295'>Murray</w>
+	<w id='w296'>recruited</w>
+	<w id='w297'>Amidu</w>
+	<w id='w298'>Berry</w>
+	<w id='w299'>and</w>
+	<w id='w300'>DJ</w>
+	<w id='w301'>Awadi</w>
+	<w id='w302'>.</w>
+      </s>
+    </p>
+
+  </text>
+
+  <markup>
+
+    <nes>
+      <ne id='e62' gid='E20' fr='w292' to='w292' t='GPE' st='Nation'>
+	<textspan type='extent'>American</textspan>
+	<textspan type='head'>American</textspan>
+	<exattr n='CLASS' v='SPC'/>
+	<exattr n='LDCTYPE' v='PRE'/>
+      </ne>
+      <ne id='e61' gid='E18' fr='w292' to='w293' hfr='w293' hto='w293' t='PER'>
+	<textspan type='extent'>American saxophonist</textspan>
+	<textspan type='head'>saxophonist</textspan>
+	<exattr n='CLASS' v='SPC'/>
+	<exattr n='LDCTYPE' v='PRE'/>
+      </ne>
+      <ne id='e60' gid='E18' fr='w292' to='w295' hfr='w294' hto='w295' t='PER'>
+	<textspan type='extent'>American saxophonist David Murray</textspan>
+	<textspan type='head'>David Murray</textspan>
+	<exattr n='CLASS' v='SPC'/>
+	<exattr n='LDCTYPE' v='NAM'/>
+      </ne>
+      <ne id='e4' gid='E38' fr='w297' to='w298' t='PER'>
+	<textspan type='extent'>Amidu Berry</textspan>
+	<textspan type='head'>Amidu Berry</textspan>
+	<exattr n='CLASS' v='SPC'/>
+	<exattr n='LDCTYPE' v='NAM'/>
+      </ne>
+      <ne id='e5' gid='E1' fr='w300' to='w301' hfr='w301' hto='w301' t='PER'>
+	<textspan type='extent'>DJ Awadi</textspan>
+	<textspan type='extent'>Awadi</textspan>
+	<exattr n='CLASS' v='SPC'/>
+	<exattr n='LDCTYPE' v='NAM'/>
+      </ne>
+    </nes>
+
+    <rels>
+      <rel id='11-1' gid='11' e1='e61' e2='e62' t='GPE-AFF' st='Citizen-or-Resident'/>
+      <rel id='2-1' gid='2' e1='e60' e2='e4' t='PER-SOC' st='Business'/>
+      <rel id='3-1' gid='3' e1='e60' e2='e5' t='PER-SOC' st='Business'/>
+    </rels>
+
+  </markup>
+
+</doc>

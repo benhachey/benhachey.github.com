@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <text>
+
+    <p>
+      <s id='s11'>
+	<w id='w211'>Beta-catenin</w>
+	<w id='w212'>is</w>
+	<w id='w213'>also</w>
+	<w id='w214'>found</w>
+	<w id='w215'>in</w>
+	<w id='w216'>these</w>
+	<w id='w217'>structures</w>
+	<w id='w218'>.</w>
+      </s>
+    </p>
+
+  </text>
+
+  <markup>
+
+    <nes>
+      <ne id='e75' fr='w211' to='w211' t='Individual_protein'>
+	<textspan type="extent">Beta-catenin</textspan>
+	<exattrs>
+	  <exattr n="t1" v="Physical_entity"/>
+	  <exattr n="t2" v="Substance"/>
+	  <exattr n="t3" v="Compound"/>
+	  <exattr n="t4" v="Organic"/>
+	  <exattr n="t5" v="Amino_acid"/>
+	  <exattr n="t6" v="Protein"/>
+	  <exattr n="t7" v="Individual_protein"/>
+	  <exattr n="bd" v="e.15.0"/>
+	</exattrs>
+      </ne>
+      <ne id='e78' fr='w214' to='w215' t='RELATIONSHIP_TEXTBINDING'>
+	<textspan type="extent">found in</textspan>
+	<exattrs>
+	  <exattr n="t1" v="RELATIONSHIP_TEXTBINDING"/>
+	  <exattr n="bd" v="e.15.3"/>
+	</exattrs>
+      </ne>
+      <ne id='e77' fr='w217' to='w217' t='Cell_component'>
+	<textspan type="extent">structures</textspan>
+	<exattrs>
+	  <exattr n="t1" v="Physical_entity"/>
+	  <exattr n="t2" v="Source"/>
+	  <exattr n="t3" v="Natural"/>
+	  <exattr n="t4" v="Cell_component"/>
+	  <exattr n="bd" v="e.15.2"/>
+	</exattrs>
+      </ne>
+    </nes>
+
+    <rels>
+      <rel id='r32' e1='e75' e2='e77' t='LOCALIZE-TO'>
+	<textspan type="extent">beta-catenin is also found in these structures</textspan>
+	<exattrs>
+	  <exattr n="bd" v="e.15.3"/>
+	  <exattr n="t1" v="Causal"/>
+	  <exattr n="t2" v="Change"/>
+	  <exattr n="t3" v="Location"/>
+	  <exattr n="t4" v="LOCALIZE-TO"/>
+	</exattrs>
+      </rel>
+    </rels>
+
+  </markup>
+
+</doc>

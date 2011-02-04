@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <text>
+
+    <p>
+      <s id='s11'>
+	<w l='beta-catenin' p='NN' phr='B-NP'>Beta-catenin</w>
+	<w l='be' p='VBZ' phr='B-VP'>is</w>
+	<w p='RB' phr='I-VP'>also</w>
+	<w l='find' p='VBN' phr='I-VP' headv='yes' voice='pass'>found</w>
+	<w p='IN'>in</w>
+	<w p='DT' phr='B-NP'>these</w>
+	<w l='structure' p='NNS' phr='I-NP'>structures</w>
+	<w p='.'>.</w>
+      </s>
+    </p>
+
+  </text>
+
+</doc>

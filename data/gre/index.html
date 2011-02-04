@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://gmpg.org/xfn/1">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+<title>Datasets for Generic Relation Extraction</title>
+
+</head>
+
+<body>
+
+
+<div id="outer">
+
+
+<div id="rap">
+
+  
+<div id="header">
+  Datasets for Generic Relation Extraction
+</div>
+<div id="navbar">
+  <a href="#introduction">introduction</a>
+  |
+  <a href="#annotation">annotation</a>
+  |
+  <a href="#download">download</a>
+  |
+  <a href="#references">references</a>
+  |
+  <a href="#acknowledgements">acknowledgements</a>
+</div>
+
+
+<div id="content" class="narrowcolumn">
+<div class="post">
+
+
+  <h4 id="introduction">Introduction</h4>
+
+  <p>A vast amount of usable electronic data is in the form of unstructured text. The relation extraction (RE) task aims to identify useful information in text (e.g., <em>PersonW</em> works for <em>OrganisationX</em>, <em>GeneY</em> encodes <em>ProteinZ</em>) and recode it in a format such as a relational database or RDF triple store that can be more effectively used for querying and automated reasoning.  A number of resources have been developed for training and evaluation of automatic systems for RE in different domains.  However, comparative evaluation is impeded by the fact that these corpora use different markup formats and different notions of what constitutes a relation.</p>
+
+  <p>The Edinburgh Regularised RE Corpora consist of publicly available data sets (ACE 2004, ACE 2005 and BioInfer) that have been standardised for evaluation of multi-type RE across domains.</p>
+
+
+  <h4 id="annotation">Annotation</h4>
+
+  <p>Annotation includes: 1) a refactored version of the original data to a common XML document type, 2) linguistic information from LT-TTT and Minipar, and 3) a normalised version of the original RE markup that complies with a shared notion of what constitutes a relation across domains.</p>
+
+
+  <h5>Refactoring</h5>
+  
+  <p>The corpora are converted to <a href="/~bhachey/data/gre/reXML.dtd">a common document type</a> using token standoff, while maintaining compatibility with all information in the original annotation.</p>
+
+  <p>The original ACE data is encoded in SGML, does not include sentence or word token markup, and uses character standoff annotation for entities and relations. Therefore, conversion to RE XML requires SGML-to-XML conversion, tokenisation and mapping from character offset to token offset. [<a href="/~bhachey/data/gre/examples/ace.xml">ACE example</a>]</p>
+
+  <p>The original BioInfer data is already encoded in XML, includes sentence and word token markup, and uses token standoff annotation for entities and relations.  Therefore, conversion to the RE XML document type is a matter of simple XML-to-XML transformation. [<a href="/~bhachey/data/gre/examples/bioinfer.xml">BioInfer example</a>]</p>
+
+
+  <h5>Preprocessing</h5>
+
+  <p>The data is enriched with various types of linguistic preprocessing information.  This uses components available as part of <a href="http://www.ltg.ed.ac.uk/software/lt-ttt2">LT-TTT2</a> to perform part-of-speech tagging, lemmatisation, identification and interpretation of nominalisations, verb and noun phrase chunking, identification of chunk heads and identifications of voice and polarity of verb phrases. [<a href="/~bhachey/data/gre/examples/ace.ttt.xml">ACE example</a>, <a href="/~bhachey/data/gre/examples/bioinfer.ttt.xml">BioInfer example</a>]</p>
+
+  <p>Preprocessing also includes parse information.  This is obtained from <a href="http://webdocs.cs.ualberta.ca/~lindek/minipar.htm">Minipar</a> and consists of token standoff encoding governor-dependency relations.  [<a href="/~bhachey/data/gre/examples/ace.dep.xml">ACE example</a>, <a href="/~bhachey/data/gre/examples/bioinfer.dep.xml">BioInfer example</a>]</p>
+
+
+  <h5>Reannotation</h5>
+
+  <p>The reannotation process normalised the two data sets so that they comply with a shared notion of relation that is intuitive, simple and informed by the semantic web.  (See <a href="#hachey-nle2010-datasets">Hachey (In preparation a)</a> for details.)</p>
+  
+  <p>For the ACE data, we automatically converted many relations involving nested, nominal entity mentions to relations involving non-nested, named or pronominal entity mentions.  For example, mapping the first entity from <em>'one'</em> to <em>'Amidu Berry'</em> for the membership relation described in the text snippet <em>'Amidu Berry, one half of PBS'</em>. <!--[<a href="/~bhachey/data/gre/examples/ace.nrm.xml">ACE example</a>]--></p>
+
+  <p>For the BioInfer data, we flattened nested relations, mapped part-whole to part-part relations, and mapped n-ary to binary relations.  <!--[<a href="/~bhachey/data/gre/examples/bioinfer.nrm.xml">BioInfer example</a>]--></p>
+
+
+  <h4 id="download">Download</h4>
+
+  <!--p>The regularised corpora are well-formed xml documents that comply with <a href="/~bhachey/data/gre/reXML.dtd">our reXML document type definition</a>.</p-->
+
+  <p>The modified version of the ACE data are available for redistribution through the Linguistic Data Consortium (LDC) as Edinburgh Regularised ACE (reACE).  The respective modified corpora are available to license holders for the original distributions for <a href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2005T09">ACE 2004</a> and <a href="http://www.ldc.upenn.edu/Catalog/CatalogEntry.jsp?catalogId=LDC2006T06">ACE 2005</a>.
+  </p>
+  <ul>
+    <li><a href="">get reACE 2004 here</a></li>
+    <li><a href="">get reACE 2005 here</a></li>
+  </ul>
+
+  <p>The modified version of the BioInfer data is available as Edinburgh Regularised BioInfer (reBioInfer).  The modified corpus is free of charge under the same open-source license terms as <a href="http://mars.cs.utu.fi/BioInfer/">the original BioInfer data set</a>.
+  </p>
+  <ul>
+    <li><a href="">get reBioInfer here</a></li>
+  </ul>
+
+
+  <h4 id="references">References</h4>
+
+  <p>Please acknowledge use of the Edinburgh Regularised RE Corpora by citing:</p>
+  
+  <blockquote id="hachey-nle2010-datasets">Ben Hachey, Claire Grover
+  and Richard Tobin (to appear). <b>Datasets for Generic Relation
+  Extraction.</b> <em>Journal of Natural Language
+  Engineering.</em></blockquote>
+
+  <p>Related publications:</p>
+
+  <blockquote id="hachey-cl2010-grc">Ben Hachey (in
+  preparation). <b>Generic Relation Characterisation: Models and
+  Evaluation.</b></blockquote>
+
+  <blockquote>Ben Hachey (2009). <b>Multi-Document Summarisation Using
+  Generic Relation Extraction.</b> In: <em>Proceedings of the 2009
+  Conference on Empirical Methods in Natural Language Processing</em>,
+  Singapore.<br/>[<a
+   href="/~bhachey/pubs/hachey-emnlp09.pdf">pdf</a>]</blockquote>
+
+  <blockquote>Ben Hachey (2009). <b>Generic Relation Identification:
+  Models and evaluation.</b> In: <em>Australasian Language Technology
+  Workshop</em>, Sydney, NSW, Australia.<br/>[<a
+   href="/~bhachey/pubs/alta2009-hachey.pdf">pdf</a>]</blockquote>
+
+  <!--
+  <blockquote>Ben Hachey (2009). <b>Towards Generic Relation
+  Extraction.</b> PhD Thesis, University of Edinburgh.  <br/>[<a
+  href="/~bhachey/pubs/hachey-phd-thesis.pdf">pdf</a>]</blockquote>
+  -->
+
+
+
+  <h4 id="acknowledgements">Acknowledgements</h4>
+
+  <p>Preparation of the Edinburgh Regularised Relation Extraction Corpora was supported by Scottish Enterprise <a href="http://www.edinburghstanfordlink.org/">Edinburgh-Stanford Link</a> grant R37588 as part of <a href="http://www.ltg.ed.ac.uk/projects/EASIE">the EASIE project</a>.</p>
+
+  <p>
+  <a href="http://www.ed.ac.uk/schools-departments/informatics/"><img src="http://media.inf.ed.ac.uk/logos/InformaticsUni_RGBsm.jpg" alt="The University of Edinburgh School of Informatics" height="45"/></a>
+  </p>
+
+  <p>
+  <span id="ltg"><a href="http://www.ltg.ed.ac.uk/">language&middot;technology&middot;group</a></span>
+  </p>
+  
+
+  <div id="footer">
+<!-- hhmts start --> Last modified: Thu Feb  3 10:58:10 EST 2011 <!-- hhmts end -->
+  | <a href="http://validator.w3.org/check?uri=referer"
+   title="Validate XHTML code">W3C XHTML 1.0</a> | <a
+    href="http://jigsaw.w3.org/css-validator/check/referer" title="Validate CSS
+   code">W3C CSS 2.0</a>
+  </div>
+
+
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11293121-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+  
+  </body>
+
+  
+  </html>

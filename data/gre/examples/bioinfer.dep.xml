@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <markup>
+
+    <dps>
+      <dp sid='s11'>
+	<dpg d='w211' cr='s+obj:w214' w='Beta-catenin' p='N' l='Beta-catenin'/>
+	<dpg d='w212' cr='be:w214' w='is' p='be' l='be'/>
+	<dpg d='w213' cr='amod:w214' w='also' p='A' l='~'/>
+	<dpg d='w214' cr='' w='found' p='V' l='find'/>
+	<dpg d='w215' cr='' w='in' p='Prep' l='~'/>
+	<dpg d='w216' cr='det:w217' w='these' p='Det' l='~'/>
+	<dpg d='w217' cr='mod*in*n:w214' w='structures' p='N' l='structure'/>
+      </dp>
+    </dps>
+
+  </markup>
+
+</doc>

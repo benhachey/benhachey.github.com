@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <markup>
+
+    <nes>
+      <ne id='e75' fr='w211' to='w211' t='Substance'/>
+      <ne id='e77' fr='w217' to='w217' t='Source'/>
+    </nes>
+
+    <rels>
+      <rel id='r32' e1='e75' e2='e77' t='Causal'/>
+    </rels>
+
+  </markup>
+
+</doc>

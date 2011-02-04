@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <markup>
+
+    <rels>
+      <rel id='11-1' gid='11' e1='e60' e2='e62' t='GPE-AFF' st='Citizen-or-Resident'/>
+      <rel id='2-1' gid='2' e1='e60' e2='e4' t='PER-SOC' st='Business'/>
+      <rel id='3-1' gid='3' e1='e60' e2='e5' t='PER-SOC' st='Business'/>
+    </rels>
+
+  </markup>
+
+</doc>

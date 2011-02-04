@@ -1,0 +1,99 @@
+b {
+  color: #444;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: #05b; 
+}
+
+a:visited {
+	color: #05b; 
+}
+
+a:active {
+	color: #999;
+}
+
+a:hover {
+	color: #999;
+}
+
+body {
+	background-color: #eee; 
+}
+
+h3 {
+	font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
+	color: #666;
+	padding-left: 5px;
+	padding-bottom: 2px;
+	padding-top: 2px;
+	background-color: #eee;
+        margin-top: 30px;
+	font-size: 14px;
+}
+
+h4 {
+    font-variant: small-caps;
+}
+
+#outer {
+    width: 725px;
+    position: relative;
+    margin: auto;
+}
+
+#navmenu {
+    width: 80px;
+    background-color: white;
+    position: fixed;
+    font-family: 'Optima', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-size: 14px;
+    padding: 5px 5px 5px 5px;
+}
+
+#rap {
+    width: 625px;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#content {
+    padding-bottom: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: justify;
+    top: 100px; 
+    z-index: 100;
+}
+
+#header {
+    font-family: 'Optima', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-size: 28px;
+    font-weight: bold; 
+    padding: 10px 10px 10px 10px;
+    color: #888;
+    text-align: right;
+}
+
+#footer {
+    font-family: 'Optima', Verdana, 'Bitstream Vera Sans', sans-serif;
+    font-size: 10px;
+    padding: 20px 10px 10px 10px;
+    color: #888;
+    text-align: right;
+}
+
+#email { 
+    font-size: small;
+}

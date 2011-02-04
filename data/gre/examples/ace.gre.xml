@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<doc id='15'>
+
+  <markup>
+
+    <nes>
+      <ne id='e62' gid='E20' fr='w292' to='w292' t='GPL'/>
+      <ne id='e61' gid='E18' fr='w292' to='w293' hfr='w293' hto='w293' t='PER'/>
+      <ne id='e60' gid='E18' fr='w292' to='w295' hfr='w294' hto='w295' t='PER'/>
+      <ne id='e4' gid='E38' fr='w297' to='w298' t='PER'/>
+      <ne id='e5' gid='E1' fr='w300' to='w301' hfr='w301' hto='w301' t='PER'/>
+    </nes>
+
+    <rels>
+      <rel id='11-1' gid='11' e1='e60' e2='e62' t='GEN-AFF' st='Cit-Res-Rel-Eth'/>
+      <rel id='2-1' gid='2' e1='e60' e2='e4' t='PER-SOC' st='Business'/>
+      <rel id='3-1' gid='3' e1='e60' e2='e5' t='PER-SOC' st='Business'/>
+    </rels>
+
+  </markup>
+
+</doc>
