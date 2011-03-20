@@ -1,0 +1,148 @@
+<!-- BASIC REXML MARKUP -->
+
+<!-- Rexml: Contains documents -->
+<!ELEMENT rexml (doc+)>
+<!-- Doc(ument): Contains text, markup -->
+<!ELEMENT doc (text?,markup?,exattrs?)>
+
+<!-- Text: Contains paragraphs and sometimes annotations -->
+<!ELEMENT text (p|ANNOTATION)+>
+<!-- P(aragraph): Contains sentences and sometimes words -->
+<!ELEMENT p (s|w)+>
+<!-- Annotation: Contains annotation text, e.g., turns in ACE broadcast news data -->
+<!ELEMENT ANNOTATION (#PCDATA)>
+<!-- S(entence): Contains words -->
+<!ELEMENT s (w)+>
+<!-- W(ord): Contains word text -->
+<!ELEMENT w (#PCDATA)>
+
+<!-- Markup: Contains NEs, relations, parses -->
+<!ELEMENT markup (nes?,rels?,dps?)>
+<!-- Nes: Contains NE mentions -->
+<!ELEMENT nes (ne*)>
+<!-- Ne: Contains NE textspan, extra attributes -->
+<!ELEMENT ne (textspan*,exattrs?)>
+<!-- Textspan: Contains text of entity or relation -->
+<!ELEMENT textspan (#PCDATA)>
+<!-- Rels: Contains relation mentions -->
+<!ELEMENT rels (rel*)>
+<!-- Rel: Contains relation textspan -->
+<!ELEMENT rel (textspan?,exattrs?)>
+
+<!-- Exattr: Extra data-specific attributes -->
+<!ELEMENT exattrs (exattr)+>
+<!ELEMENT exattr EMPTY>
+
+<!-- Document source type, e.g., newswire, broadcast -->
+<!ATTLIST doc src CDATA #IMPLIED>
+<!-- Document, sentence, word IDs -->
+<!ATTLIST doc id CDATA #REQUIRED>
+<!ATTLIST s id CDATA #REQUIRED>
+<!ATTLIST w id CDATA #REQUIRED>
+
+<!-- Word attributes from TTT tokenisation -->
+<!ATTLIST w c CDATA #IMPLIED>
+<!ATTLIST w qut CDATA #IMPLIED>
+
+<!-- NE mention ID -->
+<!ATTLIST ne id CDATA #REQUIRED>
+<!-- Grounded NE ID -->
+<!ATTLIST ne gid CDATA #IMPLIED>
+<!-- NE sentence ID -->
+<!ATTLIST ne sid CDATA #IMPLIED>
+<!-- NE named (yes|no) -->
+<!ATTLIST ne nam CDATA #IMPLIED>
+<!-- NE start token ID -->
+<!ATTLIST ne fr CDATA #REQUIRED>
+<!-- NE end token ID -->
+<!ATTLIST ne to CDATA #REQUIRED>
+<!-- NE start character offset -->
+<!ATTLIST ne so CDATA #IMPLIED>
+<!-- NE end character offset -->
+<!ATTLIST ne eo CDATA #IMPLIED>
+<!-- NE head start token ID -->
+<!ATTLIST ne hfr CDATA #IMPLIED>
+<!-- NE head end token ID -->
+<!ATTLIST ne hto CDATA #IMPLIED>
+<!-- NE head start character offset -->
+<!ATTLIST ne hso CDATA #IMPLIED>
+<!-- NE head end character offset -->
+<!ATTLIST ne heo CDATA #IMPLIED>
+<!-- NE type -->
+<!ATTLIST ne t CDATA #REQUIRED>
+<!-- NE subtype -->
+<!ATTLIST ne st CDATA #IMPLIED>
+
+<!-- Relation Mention ID -->
+<!ATTLIST rel id CDATA #IMPLIED>
+<!-- Grounded Relation ID -->
+<!ATTLIST rel gid CDATA #IMPLIED>
+<!-- Relation Sentence ID -->
+<!ATTLIST rel sid CDATA #IMPLIED>
+<!-- Relation NE 1 ID -->
+<!ATTLIST rel e1 CDATA #REQUIRED>
+<!-- Relation NE 2 ID -->
+<!ATTLIST rel e2 CDATA #REQUIRED>
+<!-- Relation Indicator NE ID -->
+<!ATTLIST rel re CDATA #IMPLIED>
+<!-- Relation Type -->
+<!ATTLIST rel t CDATA #REQUIRED>
+<!-- Relation Sub Type -->
+<!ATTLIST rel st CDATA #IMPLIED>
+
+<!-- Textspan type, e.g., extent, head -->
+<!ATTLIST textspan type CDATA #IMPLIED>
+<!-- Extra attribute name -->
+<!ATTLIST exattr n CDATA #REQUIRED>
+<!-- Extra attribute value -->
+<!ATTLIST exattr v CDATA #REQUIRED>
+
+
+<!-- TTT LINGUISTIC MARKUP -->
+
+<!-- Lemma -->
+<!ATTLIST w l CDATA #IMPLIED>
+<!-- Part-of-speech -->
+<!ATTLIST w p CDATA #IMPLIED>
+<!-- Part-of-speech: When changed in later processing, e.g., chunk grammars -->
+<!ATTLIST w prevtag CDATA #IMPLIED>
+<!-- Chunk phrase tag -->
+<!ATTLIST w phr CDATA #IMPLIED>
+<!-- Noun group head -->
+<!ATTLIST w headn CDATA #IMPLIED>
+<!-- Verb stem for nominalisations -->
+<!ATTLIST w vstem CDATA #IMPLIED>
+<!-- Verb group head -->
+<!ATTLIST w headv CDATA #IMPLIED>
+<!-- Verb group voice -->
+<!ATTLIST w voice CDATA #IMPLIED>
+<!-- Verb group negation -->
+<!ATTLIST w neg CDATA #IMPLIED>
+
+
+<!-- DEPENDENCY PARSE MARKUP -->
+
+<!-- Dps: Dependency parse container -->
+<!ELEMENT dps (dp*)>
+<!-- Dp: Contains dependency parse-->
+<!ELEMENT dp (dpg*)>
+<!-- Dpg: Governor-dependency relation -->
+<!ELEMENT dpg EMPTY>
+
+<!-- DP Sentence ID -->
+<!ATTLIST dp sid CDATA #REQUIRED>
+
+<!-- DPG dependency word ID -->
+<!ATTLIST dpg d CDATA #REQUIRED>
+<!-- DPG original governor word ID from parser -->
+<!ATTLIST dpg g CDATA #REQUIRED>
+<!-- DPG original governor-dependency relation from parser -->
+<!ATTLIST dpg t CDATA #REQUIRED>
+<!-- DPG collapsed governor-dependency relation -->
+<!ATTLIST dpg cr CDATA #REQUIRED>
+<!-- DPG word text -->
+<!ATTLIST dpg w CDATA #IMPLIED>
+<!-- DPG word lemma from parser -->
+<!ATTLIST dpg l CDATA #IMPLIED>
+<!-- DP word part-of-speech from parser -->
+<!ATTLIST dpg p CDATA #IMPLIED>
