@@ -41,6 +41,10 @@ h4 {
     font-variant: small-caps;
 }
 
+.email { 
+    font-size: small;
+}
+
 #outer {
     width: 725px;
     position: relative;
@@ -92,10 +96,6 @@ h4 {
     padding: 20px 10px 10px 10px;
     color: #888;
     text-align: right;
-}
-
-#email { 
-    font-size: small;
 }
 
 #headshot {
