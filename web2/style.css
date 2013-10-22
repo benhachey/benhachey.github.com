@@ -1,0 +1,81 @@
+body {
+	background-color: #eee; 
+}
+
+#card {
+    width: 425pt;
+    height: 225pt;
+    position: relative;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 5pt 5pt 2px #ddd;
+}
+
+#column33 {
+    float: left;
+    margin: 0;
+    width: 33%;
+}
+
+#column67 {
+    float: left;
+    margin: 0;
+    width: 67%;
+}
+
+.content {
+    height: 205pt;
+    padding: 10pt 10pt 10pt 10pt;
+    font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
+    font-size: 10pt;
+    font-weight: normal;
+    overflow: auto;
+}
+
+.social-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin: 0 5pt 0 0;
+}
+
+#headshot {
+    border: 0;
+    width: 90%;
+}
+
+h1 {
+    margin: 3pt 0;
+    color: #888;
+}
+
+h2 {
+    margin: 0;
+    font-variant: small-caps;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #05b; 
+}
+
+a:visited {
+    color: #05b; 
+}
+
+a:active {
+    color: #999;
+}
+
+a:hover {
+    color: #999;
+}
+
+.email { 
+    font-size: small;
+}
+
