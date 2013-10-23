@@ -24,7 +24,6 @@ body {
 }
 
 .content {
-    height: 205px;
     padding: 10px 10px 10px 10px;
     font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
     font-size: 10px;
@@ -35,6 +34,12 @@ body {
 .social-icon {
     width: 15px;
     height: 15px;
+    vertical-align: middle;
+    margin: 0 5px 0 0;
+}
+
+.social-icon-small {
+    height: 10px;
     vertical-align: middle;
     margin: 0 5px 0 0;
 }
