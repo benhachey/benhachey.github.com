@@ -3,12 +3,12 @@ body {
 }
 
 #card {
-    width: 425pt;
-    height: 225pt;
+    width: 425px;
+    height: 225px;
     position: relative;
     margin: auto;
     background-color: #fff;
-    box-shadow: 5pt 5pt 2px #ddd;
+    box-shadow: 5px 5px 2px #ddd;
 }
 
 #column33 {
@@ -24,10 +24,10 @@ body {
 }
 
 .content {
-    height: 205pt;
-    padding: 10pt 10pt 10pt 10pt;
+    height: 205px;
+    padding: 10px 10px 10px 10px;
     font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
-    font-size: 10pt;
+    font-size: 10px;
     font-weight: normal;
     overflow: auto;
 }
@@ -36,7 +36,7 @@ body {
     width: 15px;
     height: 15px;
     vertical-align: middle;
-    margin: 0 5pt 0 0;
+    margin: 0 5px 0 0;
 }
 
 #headshot {
@@ -45,7 +45,7 @@ body {
 }
 
 h1 {
-    margin: 3pt 0;
+    margin: 3px 0;
     color: #888;
 }
 
