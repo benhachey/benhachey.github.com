@@ -1,5 +1,8 @@
 body {
-	background-color: #eee; 
+    background-color: #eee; 
+    font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
 }
 
 #card {
@@ -11,27 +14,50 @@ body {
     box-shadow: 10px 10px 5px #ddd;
 }
 
-#column33 {
+#nav-column {
     float: left;
     margin: 0;
-    width: 33%;
+    width: 32%;
+    height: 100%
 }
 
-#column67 {
+#nav-wrap {
+    height: 100%;
+    width: 100%;
+    background-color: #666;
+    color: #fff;
+    font-size: small;
+}
+
+#nav-image {
+    width: 100%
+}
+
+#nav {
+    padding: 0px 0px 0px 20px;
+}
+
+.nav-icon {
+    width: 25px;
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+}
+
+#content-column {
     float: left;
     margin: 0;
-    width: 67%;
+    width: 68%;
+    height: 100%;
 }
 
-.content {
-    padding: 20px 20px 20px 20px;
-    font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
-    font-size: 14px;
-    font-weight: normal;
+#content {
+    height: 100%;
+    padding: 30px;
+    text-align: justify;
     overflow: auto;
 }
 
-.social-icon {
+.content-icon {
     width: 15px;
     height: 15px;
     vertical-align: middle;
@@ -49,14 +75,8 @@ body {
     width: 90%;
 }
 
-h1 {
-    margin: 5px 0;
-    color: #888;
-}
-
 h2 {
     margin: 0;
-    font-variant: small-caps;
     color: #666;
 }
 
@@ -80,7 +100,18 @@ a:hover {
     color: #999;
 }
 
-.email { 
-    font-size: small;
+a.nav:link {
+    color: #ccc; 
 }
 
+a.nav:visited {
+    color: #ccc; 
+}
+
+a.nav:hover {
+    color: #fff;
+}
+
+a.nav:hover {
+    color: #fff;
+}
