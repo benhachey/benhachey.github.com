@@ -102,15 +102,15 @@ a:hover {
 }
 
 a.nav:link {
-    color: #ccc; 
+    color: #ccc;
 }
 
 a.nav:visited {
-    color: #ccc; 
+    color: #ccc;
 }
 
 a.nav:active {
-    color: #fff;   
+    color: #fff;
 }
 
 a.nav:hover {
