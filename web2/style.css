@@ -1,7 +1,8 @@
 body {
-    background-color: #eee; 
+    background-color: #eee;
+    color: #111;
     font-family: 'Optima', 'Bitstream Vera Sans', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -108,10 +109,26 @@ a.nav:visited {
     color: #ccc; 
 }
 
-a.nav:hover {
-    color: #fff;
+a.nav:active {
+    color: #fff;   
 }
 
 a.nav:hover {
     color: #fff;
+}
+
+a.hide:link {
+    color: #111; 
+}
+
+a.hide:visited {
+    color: #111; 
+}
+
+a.hide:active {
+    color: #999;
+}
+
+a.hide:hover {
+    color: #999;
 }
