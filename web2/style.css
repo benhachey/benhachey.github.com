@@ -18,7 +18,7 @@ body {
 #nav-column {
     float: left;
     margin: 0;
-    width: 32%;
+    width: 200px;
     height: 100%
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 #nav-image {
-    width: 100%
+    width: 200px;
 }
 
 #nav {
