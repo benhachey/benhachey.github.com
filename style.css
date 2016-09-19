@@ -26,7 +26,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: #666;
-    color: #fff;
+    color: #ccc;
     font-size: small;
 }
 
@@ -56,6 +56,16 @@ body {
     padding: 30px;
     text-align: justify;
     overflow: auto;
+}
+
+#news {
+      color: #888;
+      font-weight: bold;
+      font-size: small;
+}
+
+#title {
+    color: #777;
 }
 
 .content-icon {
@@ -102,19 +112,19 @@ a:hover {
 }
 
 a.nav:link {
-    color: #ccc;
+    color: #fff;
 }
 
 a.nav:visited {
-    color: #ccc;
+    color: #fff;
 }
 
 a.nav:active {
-    color: #fff;
+    color: #ccc;
 }
 
 a.nav:hover {
-    color: #fff;
+    color: #ccc;
 }
 
 a.hide:link {
