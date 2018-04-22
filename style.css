@@ -142,3 +142,7 @@ a.hide:active {
 a.hide:hover {
     color: #999;
 }
+
+strong {
+    color: #777;
+}
